@@ -12,7 +12,7 @@ package Composicao;
 public class Composicao {
     public static void main(String[] args) {
         //Primeira forma
-        Automovel uno = new Automovel();
+        /*Automovel uno = new Automovel();
         Automovel gol = new Automovel(1600);
         
         //Segunda forma
@@ -26,5 +26,15 @@ public class Composicao {
         Motor motor2 = new Motor(1600);
         motor.setPotencia(1600);
         motor2.setPotencia(1600);
+        */
+        
+        Automovel carro = new Automovel();
+        Automovel carro2 = new Automovel(1600,"Verde");
+        
+        System.out.println("Carro 1: "); 
+        carro.imprimeAutomovel();
+        System.out.println("\n");
+        System.out.println("Carro 2: ");
+        carro2.imprimeAutomovel();
     }
 }

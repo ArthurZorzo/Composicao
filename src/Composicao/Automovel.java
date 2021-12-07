@@ -14,14 +14,15 @@ public class Automovel {
     private Motor motor;
     private Direcao direcao;
     
-    
     //Construtores
     public Automovel(){
         motor = new Motor();
+        direcao = new Direcao();
     }
     
-    public Automovel(int potencia){
+    public Automovel(int potencia, String cor){
         motor = new Motor(potencia);
+        direcao = new Direcao(cor);
     }
     
     public void ligarPelaPrimeiraVez(){
@@ -30,5 +31,10 @@ public class Automovel {
     
     public void ligarPelaPrimeiraVez(int potencia){
         motor = new Motor(potencia);
+    }
+    
+    void imprimeAutomovel(){
+        System.out.println("Potencia: "+motor.getPotencia()); 
+        System.out.println("cor: "+direcao.getCor());
     }
 }
