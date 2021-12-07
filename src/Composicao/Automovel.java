@@ -25,14 +25,6 @@ public class Automovel {
         direcao = new Direcao(cor);
     }
     
-    public void ligarPelaPrimeiraVez(){
-        motor = new Motor();
-    }
-    
-    public void ligarPelaPrimeiraVez(int potencia){
-        motor = new Motor(potencia);
-    }
-    
     void imprimeAutomovel(){
         System.out.println("Potencia: "+motor.getPotencia()); 
         System.out.println("cor: "+direcao.getCor());
